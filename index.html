@@ -49,7 +49,6 @@ h1,h2,h3,.display{font-family:'Marcellus',serif; font-weight:400; letter-spacing
 a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
 
-/* ---------- background ambience ---------- */
 .bg-glow{
   position:fixed; inset:0; z-index:0; pointer-events:none;
   background:
@@ -62,7 +61,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 @keyframes drift{0%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-24px) rotate(8deg);}100%{transform:translateY(0) rotate(0deg);}}
 .motif svg{width:100%;height:100%;display:block;}
 
-/* ---------- announcement bar ---------- */
 #announce{
   background:linear-gradient(90deg,var(--magenta),var(--rose-gold));
   color:#fff; text-align:center; font-size:.82rem; letter-spacing:.05em;
@@ -70,7 +68,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 }
 #announce.show{display:block;}
 
-/* ---------- nav ---------- */
 header.nav{
   position:sticky; top:0; z-index:40;
   background:rgba(22,7,16,.72);
@@ -102,7 +99,6 @@ nav.links a:hover::after{width:100%;}
 .admin-key:hover{opacity:1;}
 .hamburger{display:none;}
 
-/* ---------- hero ---------- */
 .hero{
   position:relative; min-height:92vh; display:flex; align-items:center; overflow:hidden;
   padding:120px 0 80px;
@@ -133,7 +129,6 @@ nav.links a:hover::after{width:100%;}
 .hero-badge .num{font-family:'Marcellus',serif; font-size:1.6rem; color:var(--rose-gold-light);}
 .hero-badge .lbl{font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--blush); opacity:.7;}
 
-/* ---------- section shell ---------- */
 section{position:relative; z-index:2; padding:110px 0;}
 .section-head{text-align:center; max-width:640px; margin:0 auto 60px;}
 .section-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem); margin-top:16px; color:var(--cream);}
@@ -143,7 +138,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .reveal{opacity:0; transform:translateY(36px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
 .reveal.in{opacity:1; transform:translateY(0);}
 
-/* ---------- about ---------- */
 .about{background:linear-gradient(180deg, transparent, rgba(51,17,39,.35), transparent);}
 .about-grid{display:grid; grid-template-columns:1fr 1.2fr; gap:64px; align-items:center;}
 .about-portrait{
@@ -165,7 +159,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .fact .t{font-family:'Marcellus',serif; color:var(--rose-gold-light); font-size:1rem; margin-bottom:4px;}
 .fact .d{font-size:.82rem; color:var(--blush); opacity:.75;}
 
-/* ---------- services ---------- */
 .tabs{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:46px;}
 .tab-btn{
   padding:10px 20px; border-radius:999px; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
@@ -199,7 +192,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .svc-price{font-family:'Marcellus',serif; color:var(--rose-gold-light); font-size:1.02rem; white-space:nowrap;}
 .svc-price.na{color:var(--blush); opacity:.55; font-family:'Jost',sans-serif; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase;}
 
-/* ---------- courses ---------- */
 .course-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
 .course-card{
   padding:34px 28px; border-radius:20px; background:linear-gradient(165deg, rgba(74,25,56,.5), rgba(34,9,26,.4));
@@ -214,7 +206,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .course-card li{font-size:.74rem; padding:5px 11px; border-radius:8px; background:rgba(255,255,255,.04); color:var(--blush); opacity:.85;}
 .course-card .fee{font-family:'Marcellus',serif; color:var(--rose-gold-light); font-size:1rem;}
 
-/* ---------- gallery ---------- */
 .gallery-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
 .gallery-grid .g-item:nth-child(4n+1){grid-row:span 2;}
 .g-item{
@@ -226,7 +217,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .g-item .ph{color:var(--rose-gold); opacity:.35;}
 .g-item .ph svg{width:34px;height:34px;}
 
-/* ---------- testimonials ---------- */
 .t-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 .t-card{padding:30px 26px; border-radius:16px; background:rgba(255,255,255,.03); border:1px solid rgba(215,173,114,.16);}
 .t-card .quote{color:var(--blush); line-height:1.8; font-size:.92rem; opacity:.9; margin-bottom:18px; font-style:italic;}
@@ -250,7 +240,6 @@ section{position:relative; z-index:2; padding:110px 0;}
 .del-review{color:#e8437f; font-size:.75rem; letter-spacing:.05em; text-transform:uppercase; flex-shrink:0;}
 .del-review:hover{text-decoration:underline;}
 
-/* ---------- booking ---------- */
 .booking{background:linear-gradient(180deg, rgba(51,17,39,.4), transparent);}
 .booking-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;}
 .book-form{display:grid; gap:16px;}
@@ -278,12 +267,10 @@ section{position:relative; z-index:2; padding:110px 0;}
 .social-btn:hover{background:linear-gradient(135deg,var(--magenta-bright),var(--rose-gold)); transform:translateY(-3px);}
 .social-btn svg{width:18px;height:18px;}
 
-/* ---------- footer ---------- */
 footer{padding:50px 0 30px; border-top:1px solid rgba(215,173,114,.15); text-align:center;}
 footer .fname{font-family:'Marcellus',serif; font-size:1.2rem; color:var(--rose-gold-light);}
 footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
 
-/* ---------- floating whatsapp ---------- */
 .float-wa{
   position:fixed; bottom:26px; right:26px; z-index:60; width:58px; height:58px; border-radius:50%;
   background:linear-gradient(135deg,#25D366,#1ebe5b); display:flex; align-items:center; justify-content:center;
@@ -292,7 +279,6 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
 .float-wa svg{width:28px;height:28px; fill:#fff;}
 @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
 
-/* ---------- admin modal ---------- */
 .modal-overlay{
   position:fixed; inset:0; background:rgba(10,3,7,.82); backdrop-filter:blur(6px); z-index:100;
   display:none; align-items:center; justify-content:center; padding:20px;
@@ -398,7 +384,7 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
       <span class="eyebrow">Meet The Owner</span>
       <h2 style="margin-top:14px;">Kavita Makeover</h2>
       <p>Welcome to NEW ROOP SAJJA BEAUTY PARLOUR ! Founded by the talented Kavita Makeover, we are your trusted destination for premium hair, skin, and bridal makeup services in Fatehpur, Siwan. Looking to master the art of beauty? We also offer expert professional training!</p>
-      <p>At Roop Sajja, our promise is simple: personal attention, premium quality products, and expert service by trained professionals. That’s the legacy we stand by.</p>
+      <p>At Roop Sajja, our promise is simple: personal attention, premium quality products, and expert service by trained professionals. That's the legacy we stand by.</p>
       <div class="about-facts">
         <div class="fact"><div class="t">Location</div><div class="d">Fatehpur, Durga Mandir, Siwan, Bihar</div></div>
         <div class="fact"><div class="t">Timing</div><div class="d" id="factTiming">10:00 AM – 8:00 PM, Mon–Sun</div></div>
@@ -481,7 +467,7 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow center">Reserve Your Slot</span>
-      <h2>Appointment Book Karein</h2>
+      <h2>Book Your Appointment</h2>
     </div>
     <div class="booking-grid reveal">
       <form class="book-form" id="bookForm">
@@ -507,7 +493,7 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
         </div>
         <div class="field">
           <label>Message (optional)</label>
-          <textarea id="bMsg" rows="3" placeholder="Kuch aur batana ho to yahan likhein"></textarea>
+          <textarea id="bMsg" rows="3" placeholder="Message for Owner"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="justify-content:center;">WhatsApp Par Booking Bhejein</button>
         <p class="book-note">Send Booking request to WhatsApp — For Booking And Enquary.</p>
@@ -559,7 +545,6 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
   <svg viewBox="0 0 32 32"><path d="M16.04 3C9.4 3 4 8.36 4 15c0 2.24.62 4.34 1.7 6.14L4 29l8.1-1.66A11.9 11.9 0 0 0 16.04 27C22.68 27 28 21.64 28 15S22.68 3 16.04 3zm0 21.8c-1.94 0-3.75-.55-5.28-1.5l-.38-.23-4.8.98.98-4.68-.25-.4A9.7 9.7 0 0 1 6.2 15c0-5.42 4.43-9.8 9.84-9.8 5.42 0 9.8 4.38 9.8 9.8 0 5.42-4.38 9.8-9.8 9.8zm5.4-7.34c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.48-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.13 4.53.72.3 1.28.5 1.72.65.72.23 1.38.2 1.9.12.58-.08 1.76-.72 2-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
 </a>
 
-<!-- Admin Modal -->
 <div class="modal-overlay" id="adminOverlay">
   <div class="modal-box">
     <span class="modal-close" id="closeAdmin">×</span>
@@ -657,7 +642,6 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-/* ---------------- ambient glow follow ---------------- */
 const bgGlow = document.getElementById('bgGlow');
 window.addEventListener('mousemove', (e)=>{
   const mx = (e.clientX/window.innerWidth*100).toFixed(1);
@@ -666,14 +650,12 @@ window.addEventListener('mousemove', (e)=>{
   bgGlow.style.setProperty('--my', my+'%');
 });
 
-/* ---------------- scroll reveal ---------------- */
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
 },{threshold:.15});
 revealEls.forEach(el=>io.observe(el));
 
-/* ---------------- icons per category ---------------- */
 const ICONS = {
   Threading:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12c4-6 12-6 16 0-4 6-12 6-16 0z"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>',
   "Face Threading":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M9 10c.5-1 1.5-1 2 0M13 10c.5-1 1.5-1 2 0M9 15c1.5 1.2 4.5 1.2 6 0"/></svg>',
@@ -694,7 +676,6 @@ const ICONS = {
 };
 const defaultIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/></svg>';
 
-/* ---------------- menu data ---------------- */
 const MENU = [
   {cat:"Threading", items:[["Eyebrow",40],["Forehead",10],["Upper Lips",10]]},
   {cat:"Face Threading", items:[["Full Face Threading",300]]},
@@ -726,7 +707,6 @@ function formatPrice(p){
   return `<span class="svc-price">₹${p.toLocaleString('en-IN')}</span>`;
 }
 
-/* render tabs */
 const tabButtons = document.getElementById('tabButtons');
 const tabPanels = document.getElementById('tabPanels');
 MENU.forEach((group, i)=>{
@@ -760,7 +740,6 @@ MENU.forEach((group, i)=>{
   tabPanels.appendChild(panel);
 });
 
-/* render courses */
 const courseGrid = document.getElementById('courseGrid');
 COURSES.forEach(c=>{
   const el = document.createElement('div');
@@ -774,7 +753,6 @@ COURSES.forEach(c=>{
   io.observe(el);
 });
 
-/* booking service dropdown */
 const bService = document.getElementById('bService');
 MENU.forEach(group=>{
   const optgroup = document.createElement('optgroup');
@@ -793,7 +771,6 @@ generalOpt.textContent = "General Enquiry (service/price/staff)";
 bService.insertBefore(generalOpt, bService.firstChild);
 bService.value = "General Enquiry";
 
-/* ---------------- WhatsApp booking ---------------- */
 const OWNER_PHONE = "916204359351";
 document.getElementById('floatWa').href = `https://wa.me/${OWNER_PHONE}?text=${encodeURIComponent("Namaste, mujhe New Roop Sajja Beauty Parlour se enquiry karni thi.")}`;
 
@@ -816,8 +793,11 @@ document.getElementById('bookForm').addEventListener('submit', function(e){
 });
 
 /* =====================================================
-   STORAGE-BACKED OWNER-MANAGED CONTENT
-   (announcement, timing, holidays, gallery, videos)
+   STORAGE — uses localStorage (works on any normal
+   website/browser). NOTE: localStorage is per-browser/
+   per-device, so owner updates made on one device will
+   only show on that same device unless a real backend
+   database is added later.
    ===================================================== */
 const DEFAULTS = {
   announcement: "",
@@ -832,17 +812,20 @@ const DEFAULTS = {
   ]
 };
 
+const LS_CONTENT_KEY = 'nrs_site_content';
+const LS_AUTH_KEY = 'nrs_admin_auth';
+
 async function loadPublicData(){
   try{
-    const res = await window.storage.get('site-content', true);
-    return res ? JSON.parse(res.value) : DEFAULTS;
+    const raw = localStorage.getItem(LS_CONTENT_KEY);
+    return raw ? JSON.parse(raw) : DEFAULTS;
   }catch(err){
     return DEFAULTS;
   }
 }
 async function savePublicData(data){
   try{
-    await window.storage.set('site-content', JSON.stringify(data), true);
+    localStorage.setItem(LS_CONTENT_KEY, JSON.stringify(data));
     return true;
   }catch(err){
     console.error('save failed', err);
@@ -853,7 +836,6 @@ async function savePublicData(data){
 let siteData = DEFAULTS;
 
 function renderPublic(){
-  // announcement
   const ann = document.getElementById('announce');
   if(siteData.announcement && siteData.announcement.trim()){
     ann.textContent = siteData.announcement;
@@ -861,10 +843,8 @@ function renderPublic(){
   }else{
     ann.classList.remove('show');
   }
-  // timing
   document.getElementById('factTiming').textContent = siteData.timing;
   document.getElementById('contactTimingText').textContent = siteData.timing;
-  // holidays (upcoming only)
   const box = document.getElementById('holidayBox');
   const today = new Date().toISOString().slice(0,10);
   const upcoming = (siteData.holidays||[]).filter(h=>h.date >= today).sort((a,b)=>a.date.localeCompare(b.date));
@@ -874,7 +854,6 @@ function renderPublic(){
   }else{
     box.classList.remove('show');
   }
-  // gallery
   const gGrid = document.getElementById('galleryGrid');
   gGrid.innerHTML = '';
   const photos = siteData.gallery||[];
@@ -916,7 +895,6 @@ function escapeHtml(s){
   const d = document.createElement('div'); d.textContent = s||''; return d.innerHTML;
 }
 
-/* star picker */
 const starPicker = document.getElementById('starPicker');
 const rvStars = document.getElementById('rvStars');
 function paintStars(v){
@@ -950,7 +928,6 @@ document.getElementById('reviewForm').addEventListener('submit', async (e)=>{
   setTimeout(()=>{ statusEl.textContent=''; }, 3000);
 });
 
-/* ---------------- admin modal logic ---------------- */
 const overlay = document.getElementById('adminOverlay');
 document.getElementById('closeAdmin').addEventListener('click', ()=>overlay.classList.remove('show'));
 overlay.addEventListener('click', (e)=>{ if(e.target===overlay) overlay.classList.remove('show'); });
@@ -960,12 +937,12 @@ function decode(s){ try{ return decodeURIComponent(escape(atob(s))); }catch(e){ 
 
 async function getAdminAuth(){
   try{
-    const res = await window.storage.get('admin-auth', true);
-    return res ? JSON.parse(res.value) : null;
+    const raw = localStorage.getItem(LS_AUTH_KEY);
+    return raw ? JSON.parse(raw) : null;
   }catch(e){ return null; }
 }
 async function setAdminAuth(pass){
-  await window.storage.set('admin-auth', JSON.stringify({p: encode(pass)}), true);
+  localStorage.setItem(LS_AUTH_KEY, JSON.stringify({p: encode(pass)}));
 }
 
 async function openAdminModal(){
@@ -1154,7 +1131,6 @@ document.getElementById('addVideo').addEventListener('click', async ()=>{
   renderVideoChips(); setStatus('Video link added.');
 });
 
-/* ---------------- init ---------------- */
 (async function init(){
   siteData = await loadPublicData();
   siteData = Object.assign({}, DEFAULTS, siteData);
