@@ -495,7 +495,7 @@ footer p{margin-top:10px; font-size:.78rem; color:var(--blush); opacity:.55;}
     <div class="section-head reveal">
       <span class="eyebrow center">Glimpses</span>
       <h2>Gallery</h2>
-      <p>Parlour ke moments aur makeovers — owner regularly update karti hain.</p>
+      <p>moments aur makeovers .</p>
     </div>
     <div class="gallery-grid reveal" id="galleryGrid"></div>
     <div style="text-align:center; margin-top:30px; display:none;" id="galleryMoreWrap">
@@ -1565,7 +1565,7 @@ function renderInstaFeed(){
   const grid = document.getElementById('igGrid');
   const posts = siteData.instaPosts||[];
   if(!posts.length){
-    grid.innerHTML = '<div class="ig-empty">Jald hi yahan hamare latest Instagram posts dikhenge — tab tak humein Instagram par follow karein!</div>';
+    grid.innerHTML = '<div class="ig-empty">Instagram Post - follow for updates!</div>';
     return;
   }
   grid.innerHTML = posts.map(url=>`
